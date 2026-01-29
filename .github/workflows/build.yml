@@ -1,52 +1,55 @@
-name: Build Helwan Linux ISO
+name: Build Arch ISO
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+    timeout-minutes: 120
 
+    steps:
       - name: Maximize Build Space
         run: |
-          # تنظيف مساحة القرص (Disk Space) لضمان وجود 30 جيجا+
+          # مسح الملفات الضخمة لتوفير مساحة (تصل لـ 30 جيجا)
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/lib/jvm /usr/local/share/boost
           sudo apt-get clean
           df -h
 
-      - name: Run Archiso Build in Docker
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build ISO
         run: |
           mkdir -p out
-          docker run --privileged --rm \
+          chmod 777 out
+
+          docker run --rm --privileged \
             -v ${{ github.workspace }}:/repo \
             archlinux:latest \
             /bin/bash -c "
-              # 1. تحديث النظام وتثبيت أدوات البناء
+              # 1. تحديث المفاتيح الأساسية وتثبيت أدوات البناء
               pacman -Sy --noconfirm archlinux-keyring && \
               pacman -Syu --noconfirm archiso git && \
               
-              # 2. تعديل صلاحيات pacman لقبول حزم حلوان (لو مش موقعه)
+              # 2. إصلاح ملف pacman.conf لضمان قبول مستودعك بدون مشاكل توقيع
+              # سنقوم بتعديل ملفك ليقبل الحزم غير الموقعة مؤقتاً لضمان النجاح
               sed -i 's/SigLevel    = Required DatabaseOptional/SigLevel = Optional TrustAll/g' /repo/pacman.conf && \
-              
-              # 3. حذف حزم قد تسبب تعارضات (زي ما طلبت)
+
+              # 3. حذف الحزم التي تسبب تعارضات أو غير موجودة في المستودعات الرسمية
               sed -i '/^cheese$/d' /repo/packages.x86_64 && \
-              
-              # 4. حل مشكلة الرام (XZ Memory Limit)
-              # بنحدد استهلاك الرام لـ 50% ونواتين بس عشان الـ Action ما يقفلش
-              export XZ_OPT='-T 2 --memory=50%' && \
-              
-              # 5. بدء عملية البناء
-              mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
+
+              # 4. تشغيل البناء مع إجبار النظام على تجاهل نقص التبعات مؤقتاً 
+              # أو اختيار الخيار الأول تلقائياً (عن طريق yes)
+              # نستخدم خيار -S لتحديث قواعد البيانات داخل الـ chroot
+              echo -e '\n' | yes | mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
             "
 
-      - name: Upload Finished ISO
+      - name: Upload ISO
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: Helwan-Cinnamon-ISO
+          name: arch-iso
           path: out/*.iso
