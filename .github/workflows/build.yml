@@ -21,31 +21,40 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Build ISO
-        run: |
-          mkdir -p out
-          chmod 777 out
+           - name: Build ISO
+            run: |
+              mkdir -p out
+              chmod 777 out
+    
+              docker run --rm --privileged \
+                -v ${{ github.workspace }}:/repo \
+                archlinux:latest \
+                /bin/bash -c "
+                  # 1. تحديث النظام بالكامل قبل أي شيء
+                  pacman -Syu --noconfirm && \
+                  
+                  # 2. تحديث المفاتيح الأساسية
+                  pacman -Sy --noconfirm archlinux-keyring && \
+                  
+                  # 3. تثبيت أدوات البناء
+                  pacman -S --noconfirm archiso git reflector && \
+                  
+                  # 4. تحديث قائمة الـmirrors لتفادي ملفات تالفة
+                  reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist && \
+                  
+                  # 5. مسح الكاش للتأكد إن مفيش ملفات تالفة
+                  pacman -Scc --noconfirm && \
+                  
+                  # 6. تعديل pacman.conf حسب الحاجة
+                  sed -i 's/SigLevel    = Required DatabaseOptional/SigLevel = Optional TrustAll/g' /repo/pacman.conf && \
+                  
+                  # 7. حذف الحزم الغير موجودة
+                  sed -i '/^cheese$/d' /repo/packages.x86_64 && \
+                  
+                  # 8. تشغيل البناء
+                  mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
+                "
 
-          docker run --rm --privileged \
-            -v ${{ github.workspace }}:/repo \
-            archlinux:latest \
-            /bin/bash -c "
-              # 1. تحديث المفاتيح الأساسية وتثبيت أدوات البناء
-              pacman -Sy --noconfirm archlinux-keyring && \
-              pacman -Syu --noconfirm archiso git && \
-              
-              # 2. إصلاح ملف pacman.conf لضمان قبول مستودعك بدون مشاكل توقيع
-              # سنقوم بتعديل ملفك ليقبل الحزم غير الموقعة مؤقتاً لضمان النجاح
-              sed -i 's/SigLevel    = Required DatabaseOptional/SigLevel = Optional TrustAll/g' /repo/pacman.conf && \
-
-              # 3. حذف الحزم التي تسبب تعارضات أو غير موجودة في المستودعات الرسمية
-              sed -i '/^cheese$/d' /repo/packages.x86_64 && \
-
-              # 4. تشغيل البناء مع إجبار النظام على تجاهل نقص التبعات مؤقتاً 
-              # أو اختيار الخيار الأول تلقائياً (عن طريق yes)
-              # نستخدم خيار -S لتحديث قواعد البيانات داخل الـ chroot
-              echo -e '\n' | yes | mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
-            "
 
       - name: Upload ISO
         if: success()
