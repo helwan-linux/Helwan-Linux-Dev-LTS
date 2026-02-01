@@ -1,11 +1,12 @@
-# Helwan Linux Developer Edition
+# Helwan Linux Developer Edition (LTS)
 <p align="center">
   <img src="https://github.com/helwan-linux/Helwan-Artwork/blob/main/icons/icon.png" alt="Helwan Linux" />
-  <br>Helwan Linux Developer Edition
+  <br>Helwan Linux Developer Edition - Long Term Support
 </p>
 
 <p align="center">
-  Arch-Linux based distro built with <code>archiso for programmers and YouTubers</code>.
+  Arch-Linux based distro built with the <b>LTS Kernel</b> for maximum stability. 
+  <code>Handcrafted for programmers, YouTubers, and production environments.</code>
 </p>
 
 [![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/helwanlinux)
