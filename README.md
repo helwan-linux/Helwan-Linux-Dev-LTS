@@ -1,7 +1,5 @@
 # Helwan Linux Developer Edition (LTS)
-# We are part of the Arch family.
-# Inspired by the stability of Manjaro, the simplicity of EndeavourOS, and the speed of CachyOS — we forged our own path with
-# the Helwan Spirit and our own tools.
+
 <p align="center">
   <img src="https://github.com/helwan-linux/Helwan-Artwork/blob/main/icons/icon.png" alt="Helwan Linux" />
   <br>Helwan Linux Developer Edition - Long Term Support
