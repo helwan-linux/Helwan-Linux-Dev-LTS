@@ -326,6 +326,7 @@ helufw
 hel-web-server
 hel-sync
 #hel-stream
+hel-bootfix
 
 ########################
 #other-helwan-packages##
