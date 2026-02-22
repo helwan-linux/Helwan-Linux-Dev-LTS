@@ -1,0 +1,35 @@
+Subject: Release Announcement: Helwan Linux Dev v3.1 – Major Update with Native Ecosystem
+
+Dear DistroWatch Team,
+
+We are excited to announce the official release of Helwan Linux Dev v3.1, 
+a global distribution focused on performance, security, and ethical innovation.
+
+Technical Highlights of v3.1:
+
+Native Ecosystem: This release features significant updates to over 10 native tools, 
+including the hpm package manager, Momo diagnostics, 
+and Hel-Sync for mobile connectivity.
+
+Enhanced Security: We have implemented critical security patches and addressed multiple 
+		   vulnerabilities in core system packages.
+
+Performance Boost: Significant optimizations have been made to ensure a faster, 
+		   more stable desktop experience.
+
+Project Philosophy:
+	This release, launching on April 24th, carries a profound message. 
+	It serves as a tribute to humanity, marking the Armenian Genocide Remembrance 
+	Day and the World Day for Laboratory Animals. Guided by our principle, 
+	"Study the greats, then you become greater," we believe that technical 
+	innovation must always be aligned with ethical values and human rights.
+
+We invite your community to explore a distribution that combines a unique native 
+toolset with a strong moral identity.
+
+News link : https://helwan-linux.github.io/helwanlinux/news.html
+GitHub Repo : https://github.com/helwan-linux?tab=repositories
+Download and Release Notes: https://helwan-linux.github.io/helwanlinux/index.html
+
+Best regards,
+Saeed Badreldin
