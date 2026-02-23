@@ -1,28 +1,41 @@
-Subject: Helwan Linux Dev v3.1 – Major Update with Native Ecosystem
+Subject: Helwan Linux Dev v3.1 – Major Update with Native Ecosystem Expansion
 
 Dear DistroWatch Team,
 
-We are excited to announce the official release of Helwan Linux Dev v3.1, 
+
+We are excited to announce the official release of Helwan Linux Dev v3.1. 
+This update marks a significant expansion of our native ecosystem, 
+now featuring a full suite of 25+ specialized tools.
+
 
 
 Technical Highlights of v3.1:
 
-Native Ecosystem: This release features significant updates to over 10 native tools, 
-including the hpm package manager, Momo diagnostics, 
-and Hel-Sync for mobile connectivity.
 
-Enhanced Security: We have implemented critical security patches and addressed multiple 
-		   vulnerabilities in core system packages.
-
-Performance Boost: Significant optimizations have been made to ensure a faster, 
-		   more stable desktop experience.
+Native Ecosystem Expansion: Significant updates to core tools like hpm, Momo, 
+and Hel-Sync, alongside the integration of new specialized suites for Security, 
+Development, and Daily use.
 
 
+Enhanced Security: Implementation of critical security patches and addressed multiple 
+vulnerabilities in core system packages.
 
 
-News link : https://helwan-linux.github.io/helwanlinux/news.html
-GitHub Repo : https://github.com/helwan-linux?tab=repositories
-Download and Release Notes: https://helwan-linux.github.io/helwanlinux/index.html
+Performance Boost: Major optimizations to ensure a faster, more stable desktop experience.
+
+
+Native Toolsets: Inclusion of utilities such as hel-sec-audit for security scanning,
+hel-builder for developers, and a new category of native Helwan Games.
+
+
+
+Links:
+
+News & Changelog: https://helwan-linux.github.io/helwanlinux/news.html
+
+GitHub Repositories: https://github.com/helwan-linux
+
+Download & Release Notes: https://helwan-linux.github.io/helwanlinux/index.html
 
 Best regards,
 Saeed Badreldin
