@@ -8,6 +8,9 @@ This update marks a significant expansion of our native ecosystem,
 now featuring a full suite of 25+ specialized tools.
 
 
+Stable Base: Now running on Linux Kernel 6.12 LTS, ensuring broad hardware support 
+and robust performance.
+
 
 Technical Highlights of v3.1:
 
