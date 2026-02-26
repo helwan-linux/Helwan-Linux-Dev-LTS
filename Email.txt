@@ -1,44 +1,42 @@
-Subject: Helwan Linux Dev v3.1 – Major Update with Native Ecosystem Expansion
-
 Dear DistroWatch Team,
 
+We are pleased to announce the official release of **Helwan Linux Dev v3.1**, a major update that represents a significant expansion of the Helwan Linux native ecosystem.
 
-We are excited to announce the official release of Helwan Linux Dev v3.1. 
-This update marks a significant expansion of our native ecosystem, 
-now featuring a full suite of 25+ specialized tools.
+This release introduces a mature and integrated suite of **25+ native tools**, designed to deliver a clean, developer-centric experience while remaining fully compatible with the Arch-based ecosystem.
 
+### Key Highlights
 
-Stable Base: Now running on Linux Kernel 6.12 LTS, ensuring broad hardware support 
-and robust performance.
+**Stable Base**
+Helwan Linux Dev v3.1 is now powered by **Linux Kernel 6.12 LTS**, providing long-term stability, improved hardware compatibility, and reliable performance.
 
+**Native Ecosystem Expansion**
+Major enhancements have been made to core native tools such as **hpm**, **Momo**, and **Hel-Sync**, alongside the introduction of new specialized toolsets focused on:
 
-Technical Highlights of v3.1:
+* Security
+* Development
+* Daily productivity
 
+**Enhanced Security**
+This release includes critical security updates and addresses multiple vulnerabilities across core system components.
 
-Native Ecosystem Expansion: Significant updates to core tools like hpm, Momo, 
-and Hel-Sync, alongside the integration of new specialized suites for Security, 
-Development, and Daily use.
+**Performance Improvements**
+System-wide optimizations have been implemented to ensure a faster, smoother, and more stable desktop experience.
 
+**New Native Toolsets**
+Helwan Linux Dev v3.1 introduces several new utilities, including:
 
-Enhanced Security: Implementation of critical security patches and addressed multiple 
-vulnerabilities in core system packages.
+* **hel-sec-audit** for system security scanning
+* **hel-builder** for development workflows
+* A new category of **native Helwan Games**
 
+> *Helwan Linux is an independent project focused on delivering a clean, developer-oriented environment. We believe this release provides meaningful value to the Arch-based Linux community.*
 
-Performance Boost: Major optimizations to ensure a faster, more stable desktop experience.
+### Links
 
-
-Native Toolsets: Inclusion of utilities such as hel-sec-audit for security scanning,
-hel-builder for developers, and a new category of native Helwan Games.
-
-
-
-Links:
-
-News & Changelog: https://helwan-linux.github.io/helwanlinux/news.html
-
-GitHub Repositories: https://github.com/helwan-linux
-
-Download & Release Notes: https://helwan-linux.github.io/helwanlinux/index.html
+* News & Changelog: https://helwan-linux.github.io/helwanlinux/news.html
+* GitHub Repositories: https://github.com/helwan-linux
+* Download & Release Notes: https://helwan-linux.github.io/helwanlinux/index.html
 
 Best regards,
-Saeed Badreldin
+**Saeed Badreldin**
+Helwan Linux Project
