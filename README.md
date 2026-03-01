@@ -12,8 +12,9 @@
 
 ## Helwan Linux ☕❤️
 
-[☕ Buy Me a Coffee](https://buymeacoffee.com/helwanlinux)  
-[❤️ Support on Ko-fi](https://ko-fi.com/helwanlinux)
+[![Buy Me a Coffee](https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000)](https://buymeacoffee.com/helwanlinux)  
+
+[![Support on Ko-fi](https://img.shields.io/badge/❤️-Support%20on%20Ko--fi-13C3FF?style=for-the-badge&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/helwanlinux)
 
 ---
 
