@@ -10,33 +10,31 @@
   <code>Handcrafted for programmers, YouTubers, and production environments.</code>
 </p>
 
-## Helwan Linux ☕❤️
-
-[![Buy Me a Coffee](https://img.shields.io/badge/☕%20Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000)](https://buymeacoffee.com/helwanlinux)  
-
-[![Support on Ko-fi](https://img.shields.io/badge/❤️%20Support%20on%20Ko--fi-13C3FF?style=for-the-badge&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/helwanlinux)
+<div align="center" style="margin-top: 20px; margin-bottom: 30px;">
+  [![Buy Me a Coffee](https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-yellow?style=for-the-badge&logo=buymeacoffee)](https://buymeacoffee.com/helwanlinux)
+  [![Support on Ko-fi](https://img.shields.io/badge/❤️-Ko--fi-blue?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/helwanlinux)
+</div>
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
 - [Welcome to Helwan Linux](#welcome-to-helwan-linux)
-- [What is Helwan Linux](#what-is-helwan-linux)
-- [What's inside](#whats-inside)
-  - [Code Editors & Dev Tools](#code-editors--dev-tools)
-  - [Programming Languages & Dev Environments](#programming-languages--dev-environments)
-  - [Docker & DevOps Ready](#docker--devops-ready)
-  - [Multimedia Creation](#multimedia-creation)
-  - [Internet & Communication](#internet--communication)
-  - [Office Suite](#office-suite)
-  - [System Tools & Utilities](#system-tools--utilities)
-- [Official Tools Included](#official-tools-included-in-helwan-linux)
-- [System Requirements](#system-requirements)
-- [Community & Resources](#helwan-linux-community--resources)
-- [Official Resources](#official-resources)
-- [Contact Us](#contact-us)
-- [Useful Commands](#useful-commands-aliases)
-- [License](#license)
+- [🚀 What is Helwan Linux?](#🚀-what-is-helwan-linux)
+- [💡 What's inside?](#💡-whats-inside)
+  - [1. Code Editors & Dev Tools](#1-code-editors--dev-tools)
+  - [2. Programming Languages & Dev Environments](#2-programming-languages--dev-environments)
+  - [3. Docker & DevOps Ready](#3-docker--devops-ready)
+  - [4. Multimedia Creation](#4-multimedia-creation)
+  - [5. Internet & Communication](#5-internet--communication)
+  - [6. Office Suite](#6-office-suite)
+  - [7. System Tools & Utilities](#7-system-tools--utilities)
+- [🧰 Official Tools Included](#🧰-official-tools-included)
+- [💾 System Requirements](#💾-system-requirements)
+- [🌍 Helwan Linux Community & Resources](#🌍-helwan-linux-community--resources)
+- [🔗 Official Resources](#🔗-official-resources)
+- [📬 Contact Us](#📬-contact-us)
+- [🧪 Useful Commands (Aliases)](#🧪-useful-commands-aliases)
 
 ---
 
@@ -50,7 +48,7 @@ Designed by developers, for developers and creators
 
 ---
 
-## What is Helwan Linux
+## 🚀 What is Helwan Linux?
 
 Helwan Linux is not just another Linux distro.  
 It’s a handcrafted Arch-based system built to empower programmers, YouTubers, and power users with a fast, secure, and full-featured desktop — right out of the box.  
@@ -59,12 +57,11 @@ With the Cinnamon desktop, the elegance of simplicity meets the power of perform
 
 ---
 
-## What's inside
+## 💡 What's inside?
 
 Everything a creative or a coder needs — already preinstalled and ready to go.
 
-### Code Editors & Dev Tools
-
+### 1. Code Editors & Dev Tools
 - **Geany** – Fast & simple IDE for any language  
 - **VS Code (code)** – Industry-standard code editor  
 - **Meld** – Visual diff and merge tool  
@@ -72,8 +69,7 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 - **QtCreator + qt5-tools** – C++ GUI development made easy  
 - **DBeaver** – A universal SQL client & DB management platform
 
-### Programming Languages & Dev Environments
-
+### 2. Programming Languages & Dev Environments
 - **Git** – Version control system  
 - **Perl** – Practical text-processing language  
 - **Python** – Versatile scripting & AI  
@@ -86,31 +82,26 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 - **SQLite** – Embedded SQL engine  
 - **MariaDB** – High-performance relational DB
 
-### Docker & DevOps Ready
-
+### 3. Docker & DevOps Ready
 - **Docker** – Build and run containers  
 - **Docker-Compose** – Manage multi-container apps  
 - **Lazydocker** – Terminal UI for managing Docker
 
-### Multimedia Creation
-
+### 4. Multimedia Creation
 - **mpv && SMPlayer** – All-format video/audio player  
 - **Audacious** – Lightweight music player  
 - **Vokoscreen** – Screen recorder for tutorials
 
-### Internet & Communication
-
+### 5. Internet & Communication
 - **Firefox** – Secure, fast web browser  
 - **helsync** – Sync your phone with your PC   
 - **Geary** – Lightweight email client
 
-### Office Suite
+### 6. Office Suite
+- **AbiWord** – Lightweight word processor  
+- **Gnumeric** – Spreadsheet application
 
-- **abiword**
-- **gnumeric**
-
-### System Tools & Utilities
-
+### 7. System Tools & Utilities
 - **Timeshift** – System restore like Time Machine  
 - **GParted** – Partition management made easy  
 - **UFW + helUFW** – Firewall management CLI + GUI  
@@ -121,10 +112,10 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 
 ---
 
-## Official Tools Included in Helwan Linux
+## 🧰 Official Tools Included
 
 <details>
-<summary>The Core</summary>
+<summary>🛠️ Core Tools</summary>
 
 | Tool        | Description                                                        |
 |------------|--------------------------------------------------------------------|
@@ -138,7 +129,7 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 </details>
 
 <details>
-<summary>System & Admin</summary>
+<summary>⚙️ System & Admin</summary>
 
 | Tool            | Description                                                        |
 |----------------|--------------------------------------------------------------------|
@@ -152,7 +143,7 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 </details>
 
 <details>
-<summary>Developer Suite</summary>
+<summary>💻 Developer Suite</summary>
 
 | Tool            | Description                                                        |
 |----------------|--------------------------------------------------------------------|
@@ -165,7 +156,7 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 </details>
 
 <details>
-<summary>Daily Essentials</summary>
+<summary>📦 Daily Essentials</summary>
 
 | Tool            | Description                                                        |
 |----------------|--------------------------------------------------------------------|
@@ -177,7 +168,7 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 </details>
 
 <details>
-<summary>Helwan Games</summary>
+<summary>🎮 Helwan Games</summary>
 
 | Tool            | Description                                                        |
 |----------------|--------------------------------------------------------------------|
@@ -190,15 +181,15 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 
 ---
 
-## System Requirements
+## 💾 System Requirements
 
-### Recommended
+### ✅ Recommended:
 - 4GB+ RAM  
 - Dual-core+ 64-bit CPU  
 - 32GB+ storage  
 - Any modern GPU
 
-### Minimum
+### ⚠️ Minimum:
 - 3GB RAM  
 - Any 64-bit CPU  
 - 16GB storage  
@@ -206,48 +197,52 @@ Everything a creative or a coder needs — already preinstalled and ready to go.
 
 ---
 
-## Helwan Linux Community & Resources
+## 🌍 Helwan Linux Community & Resources
 
-### Video Reviews
-- [DGLFI épisode 58](https://peertube.pcservice46.fr/w/t4w7FgJXbX94CFoxRpDNcF)  
-- [Helwan Linux: DistroTuber](https://www.youtube.com/watch?v=OMxUR3n11iw)  
-- [How to Install Helwan Linux on VirtualBox](https://www.youtube.com/watch?v=Ps7J2omO-BU&t=1s)
+<details>
+<summary>Community Coverage & Mentions</summary>
 
-### Articles & Media
-- [distritotux](https://www.distritotux.cl/2025/08/helwan-linux-el-combo-perfecto-de-arch.html)  
-- [ItsFOSS gitlab](https://itsfoss.gitlab.io/post/helwan-linux-a-made-in-egypt-linux-distribution/)  
-- [Linux Today](https://www.linuxtoday.com/blog/helwan-o-s-egypts-all-purpose-linux-distribution/)  
+- 🇫🇷 [DGLFI épisode 58](https://peertube.pcservice46.fr/w/t4w7FgJXbX94CFoxRpDNcF)  
+- 🇪🇸 [Helwan Linux Review (YouTube)](https://www.youtube.com/watch?v=OMxUR3n11iw)  
+- 📀 [Install Helwan Linux on VirtualBox](https://www.youtube.com/watch?v=Ps7J2omO-BU&t=1s)  
+- ES [distritotux](https://www.distritotux.cl/2025/08/helwan-linux-el-combo-perfecto-de-arch.html)  
+- 🇬🇧 [ItsFOSS gitlab](https://itsfoss.gitlab.io/post/helwan-linux-a-made-in-egypt-linux-distribution/)  
+- 🇬🇧 [Linux Today](https://www.linuxtoday.com/blog/helwan-o-s-egypts-all-purpose-linux-distribution/)  
+- 🇮🇹 [LaserOffice Blog](https://www.laseroffice.it/blog/2025/05/19/helwan-os-la-distribuzione-gnu-linux-multiuso-egiziana/)  
+- 🌍 [FOSS Weekly #25.23](https://app.daily.dev/posts/foss-weekly-25-23-helwan-linux-quarkdown-konsole-tweaks-keyboard-shortcuts-and-more-linux-stuff-nw8ryjijn)
 
----
-
-## Official Resources
-
-- [Website](https://helwan-linux.github.io/helwanlinux/index.html)  
-- [Forum](https://helwanlinux.createaforum.com/index.php)  
-- [Facebook Page](https://www.facebook.com/profile.php?id=61571106461288)
+</details>
 
 ---
 
-## Contact Us
+## 🔗 Official Resources
 
-✉️ E-mail: [helwanlinux@gmail.com](mailto:helwanlinux@gmail.com)
+- 🖥️ [Website](https://helwan-linux.github.io/helwanlinux/index.html)  
+- 🗨️ [Forum](https://helwanlinux.createaforum.com/index.php)  
+- 📘 [Facebook Page](https://www.facebook.com/profile.php?id=61571106461288)
 
 ---
 
-## Useful Commands (Aliases)
+## 📬 Contact Us
+
+✉️ **Want your video featured here? Interested in collaboration?**  
+📧 **E-mail**: [helwanlinux@gmail.com](mailto:helwanlinux@gmail.com)
+
+---
+
+## 🧪 Useful Commands (Aliases)
 
 ```bash
-alias sync="sudo pacman -Syyy"            
-alias install="sudo pacman -S"            
-alias update="sudo pacman -Syu"          
-alias search="sudo pacman -Ss"            
-alias search-local="sudo pacman -Qs"     
-alias pkg-info="sudo pacman -Qi"          
-alias local-install="sudo pacman -U"      
-alias helwan="uname -a"                   
-
----
+alias sync="sudo pacman -Syyy"            # Force sync with all mirrors
+alias install="sudo pacman -S"            # Install a package
+alias update="sudo pacman -Syu"          # Update all system packages
+alias search="sudo pacman -Ss"            # Search package in repos
+alias search-local="sudo pacman -Qs"      # Search installed packages
+alias pkg-info="sudo pacman -Qi"          # Show package details
+alias local-install="sudo pacman -U"      # Install local .pkg.tar.zst
+alias helwan="uname -a"                   # Display system info
 
 ## License
 
-This project is licensed under the **GNU General Public License v3**. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the GNU General Public License v3. See the LICENSE
+ file for more details.
