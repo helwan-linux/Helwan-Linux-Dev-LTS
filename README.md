@@ -10,11 +10,13 @@
   <code>Handcrafted for programmers, YouTubers, and production environments.</code>
 </p>
 
-[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/helwanlinux)
+<div align="center">
 
-[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](
-https://www.paypal.me/SaeedMohamed080
-)
+[![Buy Me a Coffee](https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000)](https://buymeacoffee.com/helwanlinux) 
+
+[![Support on Ko-fi](https://img.shields.io/badge/❤️-Support%20on%20Ko--fi-13C3FF?style=for-the-badge&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/helwanlinux)
+
+</div>
 
 ---
 
