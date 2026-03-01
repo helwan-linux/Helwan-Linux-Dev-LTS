@@ -107,34 +107,72 @@ Your Swiss army knife of system control:
 
 ## 🧰 Official Tools Included in Helwan Linux
 
-| Category        | Tool            | Description                                                        |
-|-----------------|----------------|--------------------------------------------------------------------|
-| The Core        | hpm            | Human-friendly package manager with natural-language command chaining. |
-|                 | momo           | Smart TUI diagnostics tool for system performance and issue detection. |
-|                 | welcome        | User-friendly utility for system maintenance and kernel management. |
-|                 | hel-ai-gate    | Lightweight bridge for integrated AI assistant features.           |
-|                 | helfetch       | Enhanced system information fetch tool with a modern UI.           |
-|                 | hel-sync       | Seamless PC-mobile connectivity and bi-directional file transfer.  |
-| System & Admin  | helufw         | Graphical interface for simple and fast firewall configuration.    |
-|                 | hel-netfix     | GUI-based tool to diagnose and repair network connectivity issues. |
-|                 | hel-bootfix    | Specialized utility to recover and fix system boot partitions.     |
-|                 | hel-usb-writer | Tool to burn ISO images to USB drives safely.                      |
-|                 | hel-iso-signer | Security utility to sign and verify official ISO images.           |
-|                 | hel-sec-audit  | Quick security scanner to audit system vulnerabilities.            |
-| Developer Suite | hel-builder    | Professional tool to create, edit, and manage PKGBUILD files.      |
-|                 | hel-web-server | GUI-based local development server for web developers.             |
-|                 | hel-diagram    | Flowchart and diagram creation tool for software architecture.     |
-|                 | hel-process    | GUI task manager to monitor and control system processes.          |
-|                 | hel-terminal   | Customizable terminal emulator designed for the Helwan environment.|
-| Daily Essentials| hel-store      | Minimalist GUI app store for easy software management.             |
-|                 | hel-text-editor| Lightweight code and text editor with syntax highlighting.         |
-|                 | hel-markdown   | Focused editor for creating and viewing documentation files.       |
-|                 | hel-tutorial   | Interactive tutorials to master Linux commands and basics.         |
-| Helwan Games    | hel-blocks     | Classic Tetris-style brick game for native entertainment.          |
-|                 | hel-space-fight| Lightweight space combat action game.                               |
-|                 | hel-solitaire  | The classic card game experience, natively built.                  |
-|                 | hel-cmd-runner | Fun interactive tool to test and run system commands.              |
+<details>
+<summary>🛠️ The Core</summary>
 
+| Tool        | Description                                                        |
+|------------|--------------------------------------------------------------------|
+| hpm        | Human-friendly package manager with natural-language command chaining. |
+| momo       | Smart TUI diagnostics tool for system performance and issue detection. |
+| welcome    | User-friendly utility for system maintenance and kernel management. |
+| hel-ai-gate| Lightweight bridge for integrated AI assistant features.           |
+| helfetch   | Enhanced system information fetch tool with a modern UI.           |
+| hel-sync   | Seamless PC-mobile connectivity and bi-directional file transfer.  |
+
+</details>
+
+<details>
+<summary>⚙️ System & Admin</summary>
+
+| Tool            | Description                                                        |
+|----------------|--------------------------------------------------------------------|
+| helufw         | Graphical interface for simple and fast firewall configuration.    |
+| hel-netfix     | GUI-based tool to diagnose and repair network connectivity issues. |
+| hel-bootfix    | Specialized utility to recover and fix system boot partitions.     |
+| hel-usb-writer | Tool to burn ISO images to USB drives safely.                      |
+| hel-iso-signer | Security utility to sign and verify official ISO images.           |
+| hel-sec-audit  | Quick security scanner to audit system vulnerabilities.            |
+
+</details>
+
+<details>
+<summary>💻 Developer Suite</summary>
+
+| Tool            | Description                                                        |
+|----------------|--------------------------------------------------------------------|
+| hel-builder    | Professional tool to create, edit, and manage PKGBUILD files.      |
+| hel-web-server | GUI-based local development server for web developers.             |
+| hel-diagram    | Flowchart and diagram creation tool for software architecture.     |
+| hel-process    | GUI task manager to monitor and control system processes.          |
+| hel-terminal   | Customizable terminal emulator designed for the Helwan environment.|
+
+</details>
+
+<details>
+<summary>📦 Daily Essentials</summary>
+
+| Tool            | Description                                                        |
+|----------------|--------------------------------------------------------------------|
+| hel-store      | Minimalist GUI app store for easy software management.             |
+| hel-text-editor| Lightweight code and text editor with syntax highlighting.         |
+| hel-markdown   | Focused editor for creating and viewing documentation files.       |
+| hel-tutorial   | Interactive tutorials to master Linux commands and basics.         |
+
+</details>
+
+<details>
+<summary>🎮 Helwan Games</summary>
+
+| Tool            | Description                                                        |
+|----------------|--------------------------------------------------------------------|
+| hel-blocks     | Classic Tetris-style brick game for native entertainment.          |
+| hel-space-fight| Lightweight space combat action game.                               |
+| hel-solitaire  | The classic card game experience, natively built.                  |
+| hel-cmd-runner | Fun interactive tool to test and run system commands.              |
+
+</details>
+
+---
 ## 💾 System Requirements
 
 ### ✅ Recommended:
