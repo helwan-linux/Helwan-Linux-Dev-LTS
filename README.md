@@ -1,5 +1,51 @@
 # Helwan Linux Developer Edition (LTS)
 
+## Table of Contents
+- [Welcome to Helwan Linux](#welcome-to-helwan-linux)
+- [What is Helwan Linux?](#🚀-what-is-helwan-linux)
+- [What's inside?](#💡-whats-inside)
+  - [Code Editors & Dev Tools](#✍️-1-code-editors--dev-tools)
+  - [Programming Languages & Dev Environments](#🧠-2-programming-languages--dev-environments)
+  - [Docker & DevOps Ready](#🐳-3-docker--devops-ready)
+  - [Multimedia Creation](#🎬-4-multimedia-creation)
+  - [Internet & Communication](#🌐-5-internet--communication)
+  - [Office Suite](#📝-6-office-suite)
+  - [System Tools & Utilities](#⚙️-7-system-tools--utilities)
+- [Official Tools Included](#🧰-official-tools-included-in-helwan-linux)
+  - [The Core](#🛠️-the-core)
+  - [System & Admin](#⚙️-system--admin)
+  - [Developer Suite](#💻-developer-suite)
+  - [Daily Essentials](#📦-daily-essentials)
+  - [Helwan Games](#🎮-helwan-games)
+- [System Requirements](#💾-system-requirements)
+- [Community & Resources](#🌍-helwan-linux-community--resources)
+  - [Video Reviews](#🎥-video-reviews)
+  - [Articles & Media](#📰-articles--media)
+  - [Community & Social Mentions](#💬-community--social-mentions)
+- [Official Resources](#🔗-official-resources)
+- [Contact Us](#📬-contact-us)
+- [Useful Commands (Aliases)](#🧪-useful-commands-aliases)
+- [License](#license)
+
+<p align="center">
+  <img src="https://github.com/helwan-linux/Helwan-Artwork/blob/main/icons/icon.png" alt="Helwan Linux" />
+  <br>Helwan Linux Developer Edition - Long Term Support
+</p>
+
+<p align="center">
+  Arch-Linux based distro built with the <b>LTS Kernel</b> for maximum stability. 
+  <code>Handcrafted for programmers, YouTubers, and production environments.</code>
+</p>
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/helwanlinux)
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](
+https://www.paypal.me/SaeedMohamed080
+)
+
+## Welcome to Helwan Linux
+...
+(rest of your README follows here)
 <p align="center">
   <img src="https://github.com/helwan-linux/Helwan-Artwork/blob/main/icons/icon.png" alt="Helwan Linux" />
   <br>Helwan Linux Developer Edition - Long Term Support
