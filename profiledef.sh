@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="Helwan-Linux-Dev-LTS"
-iso_label="Helwan-Linux-Dev-LTS-v3.1"
+iso_label="Helwan-Linux-Dev-LTS-v4.0"
 iso_publisher="helwanlinux <helwanlinux@gmail.com>"
 iso_application="Helwan Linux Live/Rescue DVD"
-iso_version="v3.1"
+iso_version="v4.0"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
