@@ -1,0 +1,14 @@
+{
+    "description": "Compiz shall live again!",
+    "name": "Wobbly Windows",
+    "cinnamon-version": [
+        "1.8",
+        "1.9",
+        "2.0",
+        "2.1",
+        "2.2"
+    ],
+    "uuid": "wobbly-windows@mecheye.net",
+    "author": "none",
+    "last-edited": 1760819814
+}
