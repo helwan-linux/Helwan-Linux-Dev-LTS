@@ -3,13 +3,14 @@
 # Program Description: Deletes directories "out/" and "work/" 
 # Developer: Saeed Badrelden [saeedbadrelden2021@gmail.com]
 # OS Distribution: Helwan OS
-# Version: al-amal
+# Version: Dev
 # Date: 25 Mar 2025
 
 # Colors
 GREEN="\033[0;32m"
 RED="\033[0;31m"
 YELLOW="\033[1;33m"
+BLUE="\033[0;34m"
 NC="\033[0m"
 
 # Function to delete directory
@@ -34,3 +35,10 @@ sleep 2
 delete_dir "work/"
 
 echo -e "${GREEN}Cleaning completed ✅${NC}"
+echo ""
+echo ""
+echo -e "${BLUE}--------------------------------------------"
+echo -e "👋 Thank you for using Helwan Linux builder."
+echo -e "${GREEN}✅ All processes terminated successfully."
+echo -e "🚀 See you next time, Saeed!"
+echo -e "${BLUE}--------------------------------------------${NC}"
