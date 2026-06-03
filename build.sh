@@ -14,6 +14,7 @@ set -e  # Exit on first error
 # Colors
 GREEN="\033[0;32m"
 RED="\033[0;31m"
+BLUE="\033[0;34m"
 NC="\033[0m"
 
 LOGFILE="helwan_build.log"
@@ -35,4 +36,7 @@ else
 fi
 
 echo ""
+echo "--------------------------------------------"
 echo -e "${GREEN}🏁 Build process finished.${NC}"
+echo -e "${BLUE}🏁 Helwan OS. is ready.${NC}"
+echo "--------------------------------------------"
