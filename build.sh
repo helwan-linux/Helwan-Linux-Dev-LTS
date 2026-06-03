@@ -4,7 +4,7 @@
 # Developer: Saeed Badrelden [saeedbadrelden2021@gmail.com]
 # OS Distribution: Helwan OS
 # Distro Mail: helwanlinux@gmail.com
-# Version: al-amal
+# Version: Dev
 # Date: 25 Mar 2025
 # Website: https://helwan-linux.mystrikingly.com/
 # Forum: https://helwanlinux.createaforum.com/index.php
