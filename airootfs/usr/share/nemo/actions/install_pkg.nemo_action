@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Install Package (zst)
+Comment=Install Arch package
+Exec=x-terminal-emulator -e bash -c 'sudo pacman -U "%F"; exec bash'
+Icon=system-software-install
+Selection=single
+Extensions=pkg.tar.zst;
+Terminal=false
