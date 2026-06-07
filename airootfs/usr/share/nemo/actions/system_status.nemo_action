@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=System Status
+Comment=Show disk usage and RAM
+Exec=bash -c 'disk=$(df -h | grep "^/dev/"); mem=$(free -m | grep "Mem:"); zenity --info --title="System Status" --width=500 --text="Disk Usage:\n$disk\n\nMemory (MB):\n$mem"'
+Icon=utilities-system-monitor
+Selection=none
+Extensions=any;
+Terminal=false
