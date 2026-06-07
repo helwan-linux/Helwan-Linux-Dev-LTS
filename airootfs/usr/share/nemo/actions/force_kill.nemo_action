@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Force Kill Process
+Comment=Kill a stuck process
+Exec=bash -c 'pid=$(zenity --entry --title="Force Kill" --text="Enter PID or Process Name:"); if [ -n "$pid" ]; then killall -9 "$pid" || kill -9 "$pid"; fi'
+Icon=process-stop
+Selection=none
+Extensions=any;
+Terminal=false
