@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Search Text Here
+Comment=Search for text within files in current directory
+Exec=bash -c 'pattern=$(zenity --entry --title="Grep Search" --text="Enter search pattern:"); if [ -n "$pattern" ]; then result=$(grep -rn "$pattern" "%F" | head -n 50); if [ -z "$result" ]; then zenity --info --title="Result" --text="No matches found."; else zenity --text-info --title="Search Results (First 50)" --width=800 --height=600 --text="$result"; fi; fi'
+Icon=edit-find
+Selection=any
+Extensions=directory;
+Terminal=false
