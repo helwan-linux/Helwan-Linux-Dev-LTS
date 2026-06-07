@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Show Package Info
+Comment=Display package metadata
+Exec=bash -c 'info=$(pacman -Qpi "%F"); zenity --text-info --title="Package Info" --width=600 --height=400 --text="$info"'
+Icon=package-x-generic
+Selection=single
+Extensions=pkg.tar.zst;
+Terminal=false
