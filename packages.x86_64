@@ -160,7 +160,6 @@ pacman-contrib
 bash-completion
 zenity
 xterm
-xclip
 
 ###################
 #desktop-environment##
@@ -177,6 +176,7 @@ eog
 fastfetch
 gimp
 gnome-keyring
+xclip
 
 ###########
 #VGA Card##
@@ -186,6 +186,10 @@ xf86-video-amdgpu
 xf86-video-nouveau
 xf86-video-ati
 xf86-video-fbdev
+
+####################
+#Optional VGA Card##
+####################
 #xf86-video-dummy
 #xf86-video-qxl
 #xf86-video-voodoo
