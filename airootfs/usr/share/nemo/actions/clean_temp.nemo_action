@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Clean Temporary Files
+Comment=Remove common temp files
+Exec=rm -f *~ *.tmp *.bak
+Icon=edit-clear
+Selection=not-empty
+Extensions=any;
+Terminal=false
