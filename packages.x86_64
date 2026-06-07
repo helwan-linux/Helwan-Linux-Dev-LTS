@@ -160,6 +160,7 @@ pacman-contrib
 bash-completion
 zenity
 xterm
+xclip
 
 ###################
 #desktop-environment##
