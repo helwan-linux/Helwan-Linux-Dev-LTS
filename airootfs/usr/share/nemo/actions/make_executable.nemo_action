@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Make Executable
+Comment=chmod +x
+Exec=chmod +x "%F"
+Icon=application-x-executable
+Selection=single
+Extensions=any;
+Terminal=false
