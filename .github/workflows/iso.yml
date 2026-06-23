@@ -55,9 +55,14 @@ jobs:
               mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
             "
 
-      - name: Upload ISO
+      - name: Upload ISO to Release
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: softprops/action-gh-release@v2
         with:
-          name: arch-iso
-          path: out/*.iso
+          files: out/*.iso
+          tag_name: latest
+          body: "هذا هو الإصدار الأحدث من Helwan Linux."
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
