@@ -64,5 +64,7 @@ jobs:
           body: "هذا هو الإصدار الأحدث من Helwan Linux."
           draft: false
           prerelease: false
+          make_latest: true    # أضف هذا السطر
+          generate_release_notes: false # أضف هذا للتحكم الكامل
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
