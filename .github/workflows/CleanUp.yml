@@ -1,0 +1,21 @@
+name: Clean Workspace
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove old build files
+        run: |
+          rm -rf build/ dist/ *.pkg.tar.zst *.deb *.rpm
+
+      - name: Clear package cache
+        run: |
+          sudo pacman -Scc --noconfirm || true
+          sudo apt-get clean || true
+          sudo dnf clean all || true
+
+      - name: Show disk usage after cleanup
+        run: df -h
