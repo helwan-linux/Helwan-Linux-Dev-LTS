@@ -13,9 +13,9 @@ jobs:
 
       - name: Clear package cache
         run: |
-          sudo pacman -Scc --noconfirm || true
-          sudo apt-get clean || true
-          sudo dnf clean all || true
+          sudo apt-get clean
+          sudo apt-get autoremove -y
+          sudo rm -rf /var/lib/apt/lists/*
 
       - name: Show disk usage after cleanup
         run: df -h
