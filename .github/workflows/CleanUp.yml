@@ -1,21 +1,30 @@
-name: Clean Workspace
+name: Clear Old Artifacts
 
 on:
   workflow_dispatch:
 
 jobs:
-  cleanup:
+  delete_artifacts:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
     steps:
-      - name: Remove old build files
+      - name: Delete all repository artifacts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
-          rm -rf build/ dist/ *.pkg.tar.zst *.deb *.rpm
+          echo "Fetching artifacts list..."
+          ARTIFACTS=$(gh api repos/$REPO/actions/artifacts --jq '.artifacts[].id')
+          
+          if [ -z "$ARTIFACTS" ]; then
+            echo "No artifacts found to delete."
+            exit 0
+          fi
 
-      - name: Clear package cache
-        run: |
-          sudo apt-get clean
-          sudo apt-get autoremove -y
-          sudo rm -rf /var/lib/apt/lists/*
-
-      - name: Show disk usage after cleanup
-        run: df -h
+          for id in $ARTIFACTS; do
+            echo "Deleting artifact ID: $id"
+            gh api -X DELETE repos/$REPO/actions/artifacts/$id || echo "Failed to delete $id"
+          done
+          
+          echo "All old artifacts have been successfully cleaned up!"
