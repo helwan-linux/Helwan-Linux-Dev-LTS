@@ -1,14 +1,12 @@
-name: Build Arch ISO
+name: saeed
 
 on:
   push:
     branches: [ main ]
-    tags:
-      - 'v*' # سيتم تشغيل الرفع تلقائياً عند عمل Tag يبدأ بحرف v (مثل v1.0.0)
   workflow_dispatch:
 
 permissions:
-  contents: write # مطلوب للسماح للـ Workflow بإنشاء الـ Release ورفع الملفات إليه
+  contents: write
 
 jobs:
   build:
@@ -50,12 +48,13 @@ jobs:
               mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
             "
 
-      - name: Upload ISO to GitHub Releases
+      - name: Create Release and Upload ISO
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: out/*.iso
+          tag_name: automated-build-${{ github.run_number }}
+          name: Arch ISO Build #${{ github.run_number }}
           draft: false
-          prerelease: false
+          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
