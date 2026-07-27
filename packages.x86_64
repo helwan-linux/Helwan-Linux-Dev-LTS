@@ -198,10 +198,15 @@ xf86-video-fbdev
 #################
 #android-reader##
 #################
+udisks2
 gvfs
 gvfs-mtp
 mtpfs
 android-tools
+ntfs-3g
+exfatprogs
+libmtp
+android-udev
 
 ###################
 #cinnmon theme icons##
