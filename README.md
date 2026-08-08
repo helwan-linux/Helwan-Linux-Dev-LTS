@@ -16,6 +16,7 @@
 
 [![Support on Ko-fi](https://img.shields.io/badge/❤️-Support%20on%20Ko--fi-13C3FF?style=for-the-badge&logo=ko-fi&logoColor=ffffff)](https://ko-fi.com/helwanlinux)
 
+[![Made in Egypt](https://img.shields.io/badge/Made%20in-Egypt%20🇪🇬-red?style=for-the-badge)](https://github.com/helwan-linux)
 </div>
 
 ---
