@@ -294,6 +294,7 @@ networkmanager
 network-manager-applet
 bluez
 bluez-utils
+blueman
 pipewire-pulse
 reflector
 
