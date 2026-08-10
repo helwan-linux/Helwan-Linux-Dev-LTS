@@ -194,6 +194,7 @@ lib32-vulkan-intel
 vulkan-radeon
 lib32-vulkan-radeon
 vulkan-nouveau
+lib32-vulkan-nouveau
 
 ####################
 #Optional VGA Card##
