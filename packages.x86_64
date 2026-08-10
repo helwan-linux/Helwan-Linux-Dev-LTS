@@ -218,13 +218,6 @@ libmtp
 android-udev
 
 ###################
-#system tools######
-###################
-fwupd
-thermald
-
-
-###################
 #cinnmon theme icons##
 ###################
 tela-circle-icon-theme-blue
@@ -355,6 +348,8 @@ python-pyautogui
 yt-dlp-git
 python-numpy
 inxi
+fwupd
+thermald
 
 ##################
 #helwan-packages##
