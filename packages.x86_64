@@ -191,6 +191,9 @@ vulkan-intel
 intel-media-driver
 lib32-mesa
 lib32-vulkan-intel
+vulkan-radeon
+lib32-vulkan-radeon
+vulkan-nouveau
 
 ####################
 #Optional VGA Card##
