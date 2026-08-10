@@ -259,6 +259,7 @@ capitaine-cursors
 ##########
 #gst-tools##
 #########
+gstreamer
 gst-libav
 gst-plugins-ugly
 gst-plugins-good
@@ -309,17 +310,38 @@ qtcreator
 qt5-tools
 dbeaver
 
-######################
-#Network & Bluetooth##
-######################
+########################
+# Network & Bluetooth ##
+########################
+
 networkmanager
 network-manager-applet
+
+# Wi-Fi
+iwd
+wpa_supplicant
+wireless_tools
+
+# Bluetooth
 bluez
 bluez-utils
 blueman
-pipewire-pulse
+
+# Audio / PipeWire
 pipewire
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
 gst-plugin-pipewire
+wireplumber
+
+# Network utilities
+dhcpcd
+bind
+curl
+wget
+
+# Mirror management
 reflector
 
 #########################
