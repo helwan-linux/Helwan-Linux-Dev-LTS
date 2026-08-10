@@ -354,6 +354,7 @@ bleachbit
 python-pyautogui
 yt-dlp-git
 python-numpy
+inxi
 
 ##################
 #helwan-packages##
