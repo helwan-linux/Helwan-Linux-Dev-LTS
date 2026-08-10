@@ -186,6 +186,11 @@ xf86-video-amdgpu
 xf86-video-nouveau
 xf86-video-ati
 xf86-video-fbdev
+mesa
+vulkan-intel
+intel-media-driver
+lib32-mesa
+lib32-vulkan-intel
 
 ####################
 #Optional VGA Card##
@@ -207,6 +212,13 @@ ntfs-3g
 exfatprogs
 libmtp
 android-udev
+
+###################
+#system tools######
+###################
+fwupd
+thermald
+
 
 ###################
 #cinnmon theme icons##
