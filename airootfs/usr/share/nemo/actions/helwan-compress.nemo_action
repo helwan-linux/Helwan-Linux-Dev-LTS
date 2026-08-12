@@ -1,9 +1,0 @@
-[Nemo Action]
-Active=true
-Name=Compress with Helwan
-Comment=Compress files or folders using Helwan Compress
-Exec=hel-gui
-Icon-Name=package-compress
-Selection=Any
-Extensions=all;
-Quote=double
