@@ -1,0 +1,117 @@
+#!/bin/bash
+
+# ================================================
+# hel-git-helper — Interactive Git Assistant
+# For Helwan Linux
+# ================================================
+# Author: King Abdo (A181-CODER)
+# GitHub: https://github.com/A181-CODER
+# "Built by the King, for the people of Helwan"
+# ================================================
+
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+clear
+
+echo -e "${BLUE}"
+echo "  ██╗  ██╗███████╗██╗      ██████╗ ██╗████████╗"
+echo "  ██║  ██║██╔════╝██║     ██╔════╝ ██║╚══██╔══╝"
+echo "  ███████║█████╗  ██║     ██║  ███╗██║   ██║   "
+echo "  ██╔══██║██╔══╝  ██║     ██║   ██║██║   ██║   "
+echo "  ██║  ██║███████╗███████╗╚██████╔╝██║   ██║   "
+echo "  ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝   ╚═╝  "
+echo -e "${NC}"
+echo -e "${CYAN}  👑 hel-git-helper — by King Abdo${NC}"
+echo -e "${GREEN}  Interactive Git Assistant for Helwan Linux${NC}"
+echo -e "${YELLOW}  github.com/A181-CODER${NC}"
+echo ""
+
+show_menu() {
+    echo -e "${BLUE}================================${NC}"
+    echo -e "${YELLOW}  Choose an option:${NC}"
+    echo -e "${BLUE}================================${NC}"
+    echo "  1. 🆕 Init new repo"
+    echo "  2. 📥 Clone a repo"
+    echo "  3. 🌿 Create new branch"
+    echo "  4. 📋 Show status"
+    echo "  5. ✅ Add & Commit changes"
+    echo "  6. 🚀 Push to GitHub"
+    echo "  7. 📦 Pull latest"
+    echo "  8. 🌿 Switch branch"
+    echo "  9. 📜 Show commit history"
+    echo "  0. ❌ Exit"
+    echo -e "${BLUE}================================${NC}"
+    echo -ne "${CYAN}  Enter option: ${NC}"
+}
+
+while true; do
+    show_menu
+    read choice
+
+    case $choice in
+        1)
+            echo -ne "${GREEN}Enter repo name: ${NC}"
+            read repo_name
+            mkdir -p "$repo_name" && cd "$repo_name" && git init
+            echo -e "${GREEN}✅ Repo '$repo_name' initialized!${NC}"
+            ;;
+        2)
+            echo -ne "${GREEN}Enter repo URL: ${NC}"
+            read repo_url
+            git clone "$repo_url"
+            echo -e "${GREEN}✅ Repo cloned!${NC}"
+            ;;
+        3)
+            echo -ne "${GREEN}Enter branch name: ${NC}"
+            read branch_name
+            git checkout -b "$branch_name"
+            echo -e "${GREEN}✅ Branch '$branch_name' created!${NC}"
+            ;;
+        4)
+            git status
+            ;;
+        5)
+            git add .
+            echo -ne "${GREEN}Enter commit message: ${NC}"
+            read commit_msg
+            git commit -m "$commit_msg"
+            echo -e "${GREEN}✅ Changes committed!${NC}"
+            ;;
+        6)
+            echo -ne "${GREEN}Enter branch name to push: ${NC}"
+            read branch_name
+            git push origin "$branch_name"
+            echo -e "${GREEN}✅ Pushed to GitHub!${NC}"
+            ;;
+        7)
+            git pull
+            echo -e "${GREEN}✅ Pulled latest changes!${NC}"
+            ;;
+        8)
+            echo -ne "${GREEN}Enter branch name: ${NC}"
+            read branch_name
+            git checkout "$branch_name"
+            echo -e "${GREEN}✅ Switched to '$branch_name'!${NC}"
+            ;;
+        9)
+            git log --oneline --graph --all
+            ;;
+        0)
+            echo -e "${YELLOW}👑 Goodbye from King Abdo!${NC}"
+            exit 0
+            ;;
+        *)
+            echo -e "${RED}❌ Invalid option!${NC}"
+            ;;
+    esac
+
+    echo ""
+    echo -ne "${YELLOW}Press Enter to continue...${NC}"
+    read
+    clear
+done
