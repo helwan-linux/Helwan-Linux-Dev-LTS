@@ -1,0 +1,10 @@
+[Default Applications]
+application/zip=hel-compress.desktop
+application/x-7z-compressed=hel-compress.desktop
+application/x-rar=hel-compress.desktop
+application/x-tar=hel-compress.desktop
+application/gzip=hel-compress.desktop
+application/x-bzip2=hel-compress.desktop
+application/x-xz=hel-compress.desktop
+application/zstd=hel-compress.desktop
+application/x-compressed-tar=hel-compress.desktop
