@@ -360,7 +360,8 @@ hel-web-server
 hel-sync
 #hel-stream
 hel-bootfix
-hel-builder
+#hel-builder
+hel-release
 
 ########################
 #other-helwan-packages##
@@ -386,5 +387,5 @@ hel-maze
 hel-senet
 hel-mines
 hel-prism
-hel-release
+
 
