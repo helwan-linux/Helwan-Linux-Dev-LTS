@@ -45,13 +45,7 @@ jobs:
               # 5. مسح الكاش للتأكد إن مفيش ملفات تالفة
               pacman -Scc --noconfirm && \
 
-              # 6. تعديل pacman.conf حسب الحاجة
-              sed -i 's/SigLevel    = Required DatabaseOptional/SigLevel = Optional TrustAll/g' /repo/pacman.conf && \
-
-              # 7. حذف الحزم الغير موجودة
-              sed -i '/^cheese$/d' /repo/packages.x86_64 && \
-
-              # 8. تشغيل البناء
+              # 6. تشغيل البناء بدون تعديل ملفات الـprofile
               mkarchiso -v -w /tmp/archiso-work -o /repo/out /repo
             "
 
