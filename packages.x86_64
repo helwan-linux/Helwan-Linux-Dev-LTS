@@ -279,7 +279,11 @@ networkmanager
 network-manager-applet
 bluez
 bluez-utils
+pipewire
+pipewire-alsa
+pipewire-jack
 pipewire-pulse
+wireplumber
 reflector
 
 #########################
