@@ -392,5 +392,7 @@ hel-maze
 hel-senet
 hel-mines
 hel-prism
-
-
+hel-2048
+hel-snake
+hel-pong
+hel-memory
