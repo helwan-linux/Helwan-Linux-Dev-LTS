@@ -297,6 +297,7 @@ rust
 lua
 sqlite
 mariadb
+dos2unix
 
 #############
 #Multimedia##
