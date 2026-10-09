@@ -367,6 +367,7 @@ hel-sync
 hel-bootfix
 #hel-builder
 hel-release
+hpi
 
 ########################
 #other-helwan-packages##
