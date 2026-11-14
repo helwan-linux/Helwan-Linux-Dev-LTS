@@ -227,6 +227,7 @@ gst-plugins-ugly
 gst-plugins-good
 gst-plugins-base
 gst-plugins-bad
+gst-plugin-pipewire
 
 #######
 #fonts##
